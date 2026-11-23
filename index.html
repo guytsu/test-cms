@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head><meta charset="utf-8">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head>
+<body><h1 id="t"></h1><p id="x"></p><img id="i" width="300">
+<script>
+fetch('/content/home.json').then(r=>r.json()).then(d=>{
+  t.textContent=d.title; x.textContent=d.text; if(d.image) i.src=d.image;});
+</script></body></html>
